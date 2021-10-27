@@ -1,0 +1,165 @@
+/* cores padrão */
+:root {
+    --orange: #f0623e;
+    --black: #1a1a1a;
+    --yellow: #ebdb00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    /* background: rebeccapurple; */
+}
+
+header .header-container .logo img {
+    max-width: 80px;
+}
+
+header .input-area {
+    position: relative;
+    background: orange;
+    max-width: 700px;
+    width: 100%;
+    min-width: 700px;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 10px 19px -9px rgba(0,0,0,0.78); 
+    box-shadow: 3px 10px 19px -9px rgba(0,0,0,0.78);
+}
+
+header .input-area input {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 8px 40px 8px 15px;
+    color: #2e2e2e;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+
+header .input-area :nth-child(2){
+    position: absolute;
+    color: #a8a4a4;
+    right: 15px;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .login-area {
+    display: flex;
+    align-items: center;
+
+}
+
+header .login-area .login-photo {
+    border: 2px solid #c7c7c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+header .login-area .login-photo :nth-child(1) {
+    color: #c7c7c7;
+    font-size: 16px;
+}
+
+header .login-area span {
+    color: #c7c7c7;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* estilos de conteudo */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 20px;
+}
+
+section {
+    margin: 30px 0;
+}
+
+section#anuncio .anuncio-container {
+    padding: 20px 0;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+section#anuncio .anuncio-container span {
+    text-align: center;
+    font-weight: bold;
+    color: #202020;
+}
+
+section#carousel .carousel-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+
+section#carousel .carousel-container img {
+    width: 100%;
+}
+
+section#categorias .categorias-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+section#categorias .categorias-container .categoria {
+    margin: 10px;
+    border: 1px solid lightgray;
+    padding: 25px 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#categorias .categorias-container .categoria :nth-child(1) {
+    font-size: 2rem;
+    color: rgb(58, 58, 58);
+    margin-right: 7px;
+}
